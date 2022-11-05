@@ -1,0 +1,38 @@
+Time limit	1 second
+Memory limit	64.0 MB
+Input	stdin or input.txt
+Output	stdout or output.txt
+
+
+
+Accountant Zinaida Markovna is trying to send a complaint to the technical support of the 2DOffice program about the incorrect operation of the program, which does not allow her to compile a quarterly report. The message box on the technical support site has a width of A, that is, no more than A characters can be placed in one line (not counting the line feed character, that is, it is possible to place a string of length a+1, in which the last character is a line feed).
+
+Also, in order for the message to be accepted, it must be formatted correctly, namely:
+
+No more than b words are allowed in one line. Adjacent words in a line are separated by exactly one space. Each line must end with exactly one line feed. The first character of the string, as well as the character before the line feed, cannot be spaces. If the next word can be added to the current line so that all the previous paragraphs are executed and the line does not overflow, then it must be added to it. If these criteria are not met, the string is not accepted.
+
+Zinaida Markovna's complaint contains no more than a thousand words. Since the site freezes quite often, she typed it in the text editor “miv”, which saves only one word per line. Help Zinaida Markovna format the text.
+
+
+
+Input format
+The first line contains an integer A — the width of the window ( 1≤ A ≤100). 
+The second line contains an integer B — the maximum number of words in a line (1≤ B ≤60).
+This is followed by the text typed by Zinaida Markovna — no more than 1000 words consisting of lowercase Latin letters, one word per line. It is guaranteed that the word length does not exceed a. The end of the input ends with the word “0” (single zero), which is not included in the message.
+
+Output format
+Output a formatted message. Note that in this task, the comparison of the answer with the correct one is made byte by byte (that is, taking into account spaces and line feeds).
+
+Sample
+Input:	
+10
+2
+contora
+is
+doing
+well
+0
+
+Output: 
+contora is
+doing well
