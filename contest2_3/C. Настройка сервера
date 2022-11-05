@@ -1,0 +1,59 @@
+Time limit	1 second
+Memory limit	64.0 MB
+Input	stdin or input.txt
+Output	stdout or output.txt
+
+
+Vasya and Petya decided to improve the security system of the shark.olymp service. To do this, they first need to update the system. The server has the favorite operating system of the sysadmin Pakhom — 2DLinuks, which has the following interesting feature: if the command does not fit in a line, it should “bend” down.
+
+The part of the command that did not fit into the line is appended below one letter at the end of the line, and the remaining empty space is filled with '&' characters.
+
+More formally, let the command line have the maximum length L and the command have the length L1. If L1 ≤ L, the output consists of a single line. Otherwise, the output consists of 1+L1-L lines of length L; the first line is the first L characters of the command, each of the subsequent lines consists of the characters '&', except the last character, which is equal to the next character of the command.
+
+Help your friends format the team.
+
+
+
+Input format
+The maximum length of the command line L (a positive integer not exceeding 1000) and a line separated by a line feed are given. The string consists of lowercase Latin letters, numbers, spaces and hyphens. The first and last character of the string cannot be a space. The string length is positive and does not exceed 1000.
+
+
+Output format
+Output the command.
+
+Sample
+
+Input:	
+25
+pocker face install pandas monkeysphere green-unicorn
+
+Output:
+pocker face install panda
+&&&&&&&&&&&&&&&&&&&&&&&&s
+&&&&&&&&&&&&&&&&&&&&&&&& 
+&&&&&&&&&&&&&&&&&&&&&&&&m
+&&&&&&&&&&&&&&&&&&&&&&&&o
+&&&&&&&&&&&&&&&&&&&&&&&&n
+&&&&&&&&&&&&&&&&&&&&&&&&k
+&&&&&&&&&&&&&&&&&&&&&&&&e
+&&&&&&&&&&&&&&&&&&&&&&&&y
+&&&&&&&&&&&&&&&&&&&&&&&&s
+&&&&&&&&&&&&&&&&&&&&&&&&p
+&&&&&&&&&&&&&&&&&&&&&&&&h
+&&&&&&&&&&&&&&&&&&&&&&&&e
+&&&&&&&&&&&&&&&&&&&&&&&&r
+&&&&&&&&&&&&&&&&&&&&&&&&e
+&&&&&&&&&&&&&&&&&&&&&&&& 
+&&&&&&&&&&&&&&&&&&&&&&&&g
+&&&&&&&&&&&&&&&&&&&&&&&&r
+&&&&&&&&&&&&&&&&&&&&&&&&e
+&&&&&&&&&&&&&&&&&&&&&&&&e
+&&&&&&&&&&&&&&&&&&&&&&&&n
+&&&&&&&&&&&&&&&&&&&&&&&&-
+&&&&&&&&&&&&&&&&&&&&&&&&u
+&&&&&&&&&&&&&&&&&&&&&&&&n
+&&&&&&&&&&&&&&&&&&&&&&&&i
+&&&&&&&&&&&&&&&&&&&&&&&&c
+&&&&&&&&&&&&&&&&&&&&&&&&o
+&&&&&&&&&&&&&&&&&&&&&&&&r
+&&&&&&&&&&&&&&&&&&&&&&&&n
