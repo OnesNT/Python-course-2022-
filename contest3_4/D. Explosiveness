@@ -1,0 +1,20 @@
+Time limit	1 second
+Memory limit	64Mb
+Input	standard input or input.txt
+Output	standard output or output.txt
+
+
+When processing radioactive materials, three types of waste are generated: highly hazardous (type A), partially non–hazardous (type B), and completely non–hazardous (type C). The same containers are used for their storage. After the waste is placed in the containers, they are stacked vertically. The stack is considered explosive if it contains more than one type A container in a row. For a given number of containers N you need to determine the number of possible safe stacks.
+
+
+Input format
+The ﬁrst line enters a single integer N (1 <= N <= 20)
+Output format
+
+
+The number of possible safe stacks of length N.
+Sample
+Input	
+4
+Output
+60
