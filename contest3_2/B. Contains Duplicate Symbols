@@ -1,0 +1,42 @@
+
+Time limit	1 second
+Memory limit	64Mb
+Input	standard input or input.txt
+Output	standard output or output.txt
+
+
+You are given a string with characters. Print whether the string contains duplicate characters. We believe that a string contains duplicate characters if there is at least one character in the string that occurs twice or more anywhere in the string.
+
+
+
+Input format
+String in standard input.
+
+Output format
+True/False.
+
+
+
+
+Sample 1
+Input	
+qwerty
+
+Output
+False
+
+
+Sample 2
+Input	
+qwertty
+
+Output
+True
+
+
+Sample 3
+Input	
+yqwerty
+
+Output
+True
