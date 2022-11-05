@@ -1,0 +1,31 @@
+
+Time limit	0.5 seconds
+Memory limit	64Mb
+Input	standard input or input.txt
+Output	standard output or output.txt
+
+
+Admin Pahom is trying to clear out the server room. He found a huge box of wires. He has numbered each wire with a unique natural number. There are several types of connectors in the server room. For each connector, Pahom listed which wires would work for it. Zinaida Markovna, the accountant, distracted him during the inventory process, that why the same wire can occur several times in the connector list. Vasya and Petya tested all the wires, marked some of them as broken, and threw them away. Now they want to keep only k wires. For that they decided to count for each wire the number of connectors it fits to, order them in descending order and choose the first k. Help them to do that!
+
+
+
+Input format
+First, you are given two numbers n and k - the number of connectors and the number of wires that Vasya and Petya want to pick. In the next n lines the numbers of wires that fit to this connector are listed, separated by spaces. In the last line, you should space out the wires that Vasya and Petya rejected.
+
+Output format
+For the k selected wires, write down the numbers of connectors they fit to. Sort these numbers in ascending order and output one per row.
+
+
+Sample
+
+Input	
+4
+1
+1 3 2 4
+3 3 1 2
+3 3 3 2
+2 4
+4
+
+Output
+4
