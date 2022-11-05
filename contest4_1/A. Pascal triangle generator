@@ -1,0 +1,16 @@
+
+Time limit	1.5 seconds
+Memory limit	16Mb
+Input	standard input or input.txt
+Output	standard output or output.txt
+
+Write a generator returning an infinite sequence of Pascal triangle numbers.
+You need to upload only the code of the generator itself, the testing code imports it and runs a set of tests.
+A sequence returned by the generator should look like this:
+1 1 1 1 2 1 1 3 3 1 1 4 6 4 1 1 5 10 10 5 1 1 6 15 20 15 6 1 1 7 21 35 35 21 7 1 1 8 28 56 70 56 28 8 1 1 9 36 84 126 126 84 36 9 1 ...
+
+
+Input format
+You have to write a generator in a form of function named pascal_triangle without arguments.
+Your program have to contain the generator pascal_triangle and all required imports.
+
