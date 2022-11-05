@@ -1,0 +1,53 @@
+Time limit	1 second
+Memory limit	64.0 MB
+Input	stdin or input.txt
+Output	stdout or output.txt
+
+
+
+The office of the shark.olymp service was designed a long time ago by the outstanding architect Vasily Aladinovich Neputevy. There is a column in the center of the server room of the office. The sysadmin Groin hung a rectangular router under the ceiling, but because of the column, the Internet is not working well. Vasya and Petya decided to hang a second, exactly the same router, and so that it hung symmetrically to the first router relative to the column. Fortunately, the ceiling of the server room was covered with a coordinate grid.
+
+Vasya and Petya, using the ceiling design, determined the coordinates of the two opposite corners of the router and the coordinates of the center of the column. The router body was parallel to the lines on the coordinate paper. However, it is possible that the coordinate paper around the column was pasted incorrectly. Despite the fact that the column is very narrow, its center cannot lie inside or on the border of the router.
+
+Help the guys: check if the column coordinates are correctly determined, and calculate the coordinates of the new router.
+
+
+
+
+Input format
+Six integers separated by line breaks are given. All numbers in the input data do not exceed 10^9 in absolute value. The first two numbers are the coordinates x_a and y_a of one of the corners of the router — point A, the third and fourth numbers are the coordinates x_b and y_b of the opposite corner of the router — point B. The last two numbers are the coordinates of the column x_c and y_c (we consider the projection of the column on the ceiling as a point). It is guaranteed that the router has a non-zero area.
+
+Output format
+Print four integers separated by line breaks. First, print the coordinates of the corner of the new router symmetrical to point A, then the coordinates of the corner symmetrical to point B. If the measurement data is inconsistent, print “False".
+
+
+
+
+Sample 1
+Input	
+1
+0
+8
+3
+6
+0
+
+Output
+False
+
+
+
+Sample 2
+Input	
+3
+0
+0
+7
+4
+4
+
+Output:
+5
+8
+8
+1
