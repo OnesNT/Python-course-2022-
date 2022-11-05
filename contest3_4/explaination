@@ -1,0 +1,9 @@
+we have 2 case:
+
+case 1: we can choose n-th position is B or C what ever (n-1)-th is 
+=> 2 ways 
+
+case 2: (n - 1) -th position is A and n-th is B or C 
+=>2 ways
+
+Fn = 2 * F(n-1) + 2 * F(n-2)
