@@ -1,0 +1,33 @@
+
+Time limit	1 second
+Memory limit	64Mb
+Input	input.txt
+Output	output.txt
+
+
+
+The accounting program of Zinaida Markovna has recently begun to work poorly. She called the sysadmin Pahom for help, and the first thing he decided to do was read the program logs. Logs are written to a file in the following format:
+
+hh:mm:ss DD/MM/YYYY 127.0.0.1 message
+
+The message can contain only Latin letters, numbers, dots and spaces. If a period is at the end of a word, it is considered a punctuation mark. If there are two periods at the end of a word, the first one is considered part of the word. To determine which file is broken, Pahom needs to analyze all messages from the logs. But he is lazy! He wants to write out all the filenames that are mentioned in the messages and put them into a file. Help him!
+
+The files Pahom is interested in have names consisting of lowercase Latin letters, numbers and dots, and have the extensions .hlm or .brhl . For example, the files abacaba123.hlm and 123.brhl are of interest to him, but a.brhl.py and hlm.cpp are not. Pahom is also not interested in names that start with a dot.
+
+
+
+
+Input format
+Given an input.txt file with no more than 1000 lines of the specified format.
+
+Output format
+In the output.txt file, write down all the files mentioned in the logs, one per line, in the order in which they were encountered. You don't need to remove duplicates.
+
+
+
+Sample
+Input:	 
+12:21:10 12/01/2022 127.0.0.1 error abc.hlm is broken.
+
+Output:
+abc.hlm
