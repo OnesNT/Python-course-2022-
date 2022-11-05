@@ -1,0 +1,27 @@
+
+Time limit	1 second
+Memory limit	64.0 MB
+Input	stdin or input.txt
+Output	stdout or output.txt
+
+
+
+Admin Pahom continues to play Battleship with Spiridon Lukretziewicz. Since Pahom's operating system "2DLinuch" does not support the encoding of Greek letters and Roman, the fearless admin risks defeat. Help Pahom to win.
+
+Recall that the Greco-Roman Battle field is indexed by Greek letters and Roman numerals. The maximum size of the field is 10 vertically by 30 horizontally. The Greek letters "alpha", "beta", "gamma", "delta", "epsilon", "zeta", "eta", "theta", "iota", "kappa" are used to indicate the horizontals from top to bottom. Roman numbers from "I" to "XXX" are used to represent verticals from left to right.
+
+
+
+Input format
+A string encoding the field is given. First there is a Greek letter, then underscore, then the number written in Roman numerals. Capital letters of the Roman alphabet are used to write Roman numerals.
+
+Output format
+Output two integers - the coordinates of the field. The fields are numbered from top to bottom and left to right, starting with one.
+
+
+Sample
+Input	
+eta_XI
+
+Output
+7 11
