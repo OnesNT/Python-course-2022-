@@ -1,0 +1,29 @@
+
+Time limit	1 second
+Memory limit	64Mb
+Input	standard input or input.txt
+Output	standard output or output.txt
+
+
+
+On the computer of the system administrator Pakhom, out of nowhere, a virus started arbitrarily changing the case of letters. Vasya and Petya tried to give a nice name to the file with the settings of the printer for accounting, but because of the virus they failed. They decided to write a program that would align the case of the letters in the name so that even-numbered letters were uppercase and odd-numbered letters were lowercase. Help them!
+
+
+
+
+Input format
+You are given a non-empty string consisting of uppercase and lowercase Latin letters. The string length does not exceed 4000.
+
+Output format
+Print one line - the answer.
+
+
+
+
+Sample:
+
+Input:	 
+abAcaBa
+
+Output:
+aBaCaBa
