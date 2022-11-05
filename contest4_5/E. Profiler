@@ -1,0 +1,38 @@
+
+Time limit	10 seconds
+Memory limit	64Mb
+Input	standard input or input.txt
+Output	standard output or output.txt
+
+
+
+Write a decorator @proﬁler, which, when calling the function, will save in its attributes its execution time (in seconds, may be fractional) and the number of recursive calls that occurred during execution. Name the attributes textbflast_time_taken and textbfcalls.
+You’re not allowed to use global variables
+The decorator must behave decently, that is, must not overwrite the documentation of the function.
+You need to upload only the code of the decorator, the testing code imports it and runs a set of tests. The testing code imports a decorator from your module and runs it on a test suite.
+Python Version 3.4
+It’s useful to check the work of your decorator on the Ackermann function and on a function that takes an arbitrary number of lists and merges them into one. Implement both of these functions yourself. Description of the Ackermann function, see here.
+It’s convenient to check Ackermann function with arguments (3,4).
+
+Sample
+
+import time
+
+
+@profiler
+def sleepy_recursion(num_calls):
+    """I am a strange sleepy recursive function"""
+    time.sleep(1)
+    if num_calls > 1:
+        sleepy_recursion(num_calls - 1)
+
+
+sleepy_recursion(3)
+
+print(sleepy_recursion.__doc__)
+print(sleepy_recursion.last_time_taken)
+print(sleepy_recursion.calls)
+
+I am a strange sleepy recursive function
+3.003287
+3
