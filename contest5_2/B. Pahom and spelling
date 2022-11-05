@@ -1,0 +1,40 @@
+
+Time limit	1 second
+Memory limit	64Mb
+Input	standard input or input.txt
+Output	standard output or output.txt
+
+
+
+Sysadmin Pahom is not friendly with spelling and constantly forgets the rule "Жи-ши is written with И". Vasya and Petya decided to help him and write a program that draws a large rectangle that consists of the letters И. They plan to embed it in a text editor to remind Pakhom about spelling. Help them!
+
+
+
+
+Input format
+You are given two integers separated by a newline. 1 ≤ a ≤ 15, 1 ≤ b ≤ 15.
+
+Output format
+Print a rectangle of size a rows and b columns, made up of the letters И, as in the example. There must be exactly one space between letters in a string. Exactly one line of spaces of the same length as the rest of the lines must be printed between lines.
+
+
+
+
+Sample:
+
+Input:	 
+2
+2 
+
+Output:
+*   * *   *
+*  ** *  **
+* * * * * *
+**  * **  *
+*   * *   *
+           
+*   * *   *
+*  ** *  **
+* * * * * *
+**  * **  *
+*   * *   *
