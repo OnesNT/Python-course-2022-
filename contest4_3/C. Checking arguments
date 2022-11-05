@@ -1,0 +1,74 @@
+
+Time limit	1 second
+Memory limit	64Mb
+Input	standard input or input.txt
+Output	standard output or output.txt
+
+
+Write a decorator named @takes that will check the validity of function argument types.
+The decorator takes types of arguments and decorates the function so that it throws a TypeError exception if at least one of the arguments is of the wrong type.
+If there are more arguments than types, then you do not need to raise an error (perhaps the exact type is known only for the first arguments).
+If there are more types than arguments, then this is also an error only if the passed arguments do not fit the corresponding types in order. (decorator can be applied to functions with variable number of arguments).
+
+The decorator should behave decently, that is, it should not overwrite the main arguments of the function (__name__, __doc__, __module__).
+
+For simplicity, we can assume that the function has no named arguments (kwargs).
+
+For now, take exception throwing as a magical way to signal an error.
+
+It is done like this: raise TypeError
+
+
+
+Input format
+Your code should look like this:
+
+import sys
+
+...
+
+Your imports and code
+
+The decorator should be named "takes"
+
+...
+
+exec(sys.stdin.read())
+
+(The program will execute the code written in the input file)
+
+
+
+
+Sample 1
+Input	Output
+# this is for similar behaviour in python 2 and python 3
+from __future__ import print_function
+
+
+@takes(int, str)
+def f(a, b):
+    print(a, b)
+
+try:
+    f(1, 'abcd')
+except Exception as e:
+    print(type(e).__name__)
+1 abcd
+
+
+
+Sample 2
+Input	Output
+# this is for similar behaviour in python 2 and python 3
+from __future__ import print_function
+
+
+@takes(int, str)
+def f(a, b):
+    print(a, b)
+    
+try:
+    f(1, 2)
+except Exception as e:
+    print(type(e).__name__)
