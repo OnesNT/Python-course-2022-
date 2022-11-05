@@ -1,0 +1,29 @@
+
+Time limit	1 second
+Memory limit	64Mb
+Input	standard input or input.txt
+Output	standard output or output.txt
+
+
+
+You are given a string and a positive integer N. Make a dictionary with the occurrence frequencies of all substrings of length N of the original string. As an answer to the problem, output a sorted list of substrings that occur in the original string 2 or more times.
+
+
+
+
+Input format
+String and positive integer in standard input. You can read them by calling the input() function two times.
+
+Output format
+Sorted list with strings.
+
+
+
+
+Sample
+Input	
+abbccc
+1
+
+Output
+['b', 'c']
