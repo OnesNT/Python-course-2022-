@@ -1,0 +1,21 @@
+
+Time limit	2 seconds
+Memory limit	16Mb
+Input	standard input or input.txt
+Output	standard output or output.txt
+
+
+Write a generator that merges sorted sequences of integers.
+You need to upload only the code of the generator itself, the testing code imports it and runs a set of tests.
+The generator takes an arbitrary number of arguments. An argument can be any iterable object, including another generator. It is guaranteed that each argument is a sequence of integers sorted in non-decreasing order.
+
+
+
+Input format
+Your program have to contain the generator merge_sorter and all required imports.
+
+Notes
+1. For manual iteration, you may need the function next(): https://docs.python.org/3/library/functions.html.
+At the end of the iteration, the function next() throws an exception StopIteration. An example of exception handling: https://pastebin.com/zqjDphcK.
+
+2. The heapq module may be useful for merging: https://docs.python.org/3.0/library/heapq.html.
