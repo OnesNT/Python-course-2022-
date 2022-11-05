@@ -1,0 +1,30 @@
+Time limit	1 second
+Memory limit	64.0 MB
+Input	stdin or input.txt
+Output	stdout or output.txt
+
+
+Accountant Zinaida Markovna is very afraid that her quarterly report will be ruined by hackers. She asked the sysadmin Pakhom to protect the file with a password. Pakhom loves the number 3 very much, so he generated a positive integer with exactly three digits 3 as a password. Unfortunately, Zinaida Markovna lost a piece of paper with a password, and Pakhom remembers only that he was the i-th number with exactly three threes. Help them open the file.
+
+
+
+Input format
+Given a positive integer i not exceeding 10,000.
+
+Output format
+Print a single integer — the password to the file.
+
+
+
+Sample 1
+Input	
+1
+Output
+333
+
+
+Sample 2
+Input	
+2
+Output
+1333
