@@ -1,0 +1,32 @@
+
+Time limit	20 seconds
+Memory limit	64Mb
+Input	standard input or input.txt
+Output	standard output or output.txt
+
+
+It is sometimes useful to optimize "heavy" function calls using caching. Caching is the preservation of the results of function execution to prevent re-computation. Before calling the function, it is checked whether there is already a calculated result. If there is, the function is not called, but the stored value is returned.
+Implement a decorator for Least Recently Used (LRU) Cache. The user indicates the size of the cache N, and N last calculations are stored in the cache. In other words, what was used long ago is being forced out of the cache ﬁrst.
+Name the decorator @cache, it should take one argument - the size of the cache. Support the widest possible class of functions (functions of many arguments, functions with named parameters that take complex types, etc.). The decorator must behave decently, that is, must not overwrite the documentation of the function.
+
+
+Sample
+This code:
+@cache(2) 
+def foo(value): 
+        print(’calculate foo for {}’.format(value)) 
+        return value 
+ 
+foo(1) 
+foo(2) 
+foo(1) 
+foo(2) 
+foo(3) 
+foo(1)
+Should print this result:
+calculate foo for 1 
+calculate foo for 2 
+calculate foo for 3 
+calculate foo for 1
+You need to upload only the code of the decorator, the testing code imports it and runs a set of tests.
+Python version 3.4. You cannot use lru cache from functools
