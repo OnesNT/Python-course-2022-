@@ -1,0 +1,33 @@
+Time limit	1 second
+Memory limit	64.0 MB
+Input	stdin or input.txt
+Output	stdout or output.txt
+
+
+
+Admin Pakhom, having nothing to do, decided by correspondence to play a naval battle with his long-time colleague Spyridon Lukretievich. Spiridon Lukretievich was once engaged in Greco-Roman wrestling, and since then he has been indexing everything exclusively in Greek letters and Roman numerals, including the battlefield. Since the operating system of Pahom "2DLinuks" does not support the encoding of Greek letters and Latin numbers, it is difficult to navigate in coordinates. Help him. The maximum size of the field vertically is 10, horizontally — 30. The Greek letters “alpha”, “beta”, “gamma”, “delta”, “epsilon”, “zeta”, “eta”, “theta”, “iota”, “kappa” are used for numbering the horizontals. Verticals are numbered from left to right, horizontally — from top to bottom.
+
+Input format
+Two integers a and b separated by a line feed are given. 0 ≤ a ≤ 10, 0 ≤ b ≤ 30.
+
+Output format
+Output a board for the game — a rows, each with b field designations. the j--th word in the i--th line must contain the designation of the field at the intersection of the i--th vertical and the j--th horizontal. The coordinates of this field consist of the i--th Greek letter and the Roman number corresponding to j, connected by an underscore (‘_’). When writing Roman numbers, capital Latin letters should be used. Adjacent fields on the same line must be separated by a single space. Extra spaces at the beginning and at the end of lines are prohibited. In this task, the check is performed by byte-by-byte comparison of files.
+
+Sample
+
+Input	
+10
+11
+
+Output:
+alpha_I alpha_II alpha_III alpha_IV alpha_V alpha_VI alpha_VII alpha_VIII alpha_IX alpha_X alpha_XI
+beta_I beta_II beta_III beta_IV beta_V beta_VI beta_VII beta_VIII beta_IX beta_X beta_XI
+gamma_I gamma_II gamma_III gamma_IV gamma_V gamma_VI gamma_VII gamma_VIII gamma_IX gamma_X gamma_XI
+delta_I delta_II delta_III delta_IV delta_V delta_VI delta_VII delta_VIII delta_IX delta_X delta_XI
+epsilon_I epsilon_II epsilon_III epsilon_IV epsilon_V epsilon_VI epsilon_VII epsilon_VIII epsilon_IX epsilon_X epsilon_XI
+zeta_I zeta_II zeta_III zeta_IV zeta_V zeta_VI zeta_VII zeta_VIII zeta_IX zeta_X zeta_XI
+eta_I eta_II eta_III eta_IV eta_V eta_VI eta_VII eta_VIII eta_IX eta_X eta_XI
+theta_I theta_II theta_III theta_IV theta_V theta_VI theta_VII theta_VIII theta_IX theta_X theta_XI
+iota_I iota_II iota_III iota_IV iota_V iota_VI iota_VII iota_VIII iota_IX iota_X iota_XI
+kappa_I kappa_II kappa_III kappa_IV kappa_V kappa_VI kappa_VII kappa_VIII kappa_IX kappa_X kappa_XI
+
